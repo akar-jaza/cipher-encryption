@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           title: Text(widget.title),
           bottom: const TabBar(
@@ -71,16 +72,11 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class Tabs extends StatefulWidget {
+class Tabs extends StatelessWidget {
   const Tabs(this.s, {super.key});
 
   final String s;
 
-  @override
-  State<Tabs> createState() => _TabsState();
-}
-
-class _TabsState extends State<Tabs> {
   @override
   Widget build(BuildContext context) {
     return TabBarView(

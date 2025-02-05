@@ -38,5 +38,3 @@ class CipherHandler {
     return shiftedLetters.join();
   }
 }
-
-

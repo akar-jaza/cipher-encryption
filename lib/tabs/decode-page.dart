@@ -28,6 +28,7 @@ class _DecodePageState extends State<DecodePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding:
             const EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 20),
